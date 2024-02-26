@@ -12,7 +12,7 @@ jobs:
             - name: "Checkout repostiory"
               uses: actions/checkout@v2
             - name: "Change to directory"
-              run: "cd funwithjest"
+              run: "cd ../"
             - name: "Install all packages"
               run: "npm install"
             - name: "Run test for sum"
