@@ -1,0 +1,19 @@
+name: "Sample Work Flow"
+on:
+    push:
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Run echo command"
+              run: "echo working"
+            - name: "Run test for sum"
+              run: "npm test sum.test.js"
+            - name: "Run test for subtract"
+              run: "npm test subtract.test.js"
+            - name: "Run test for multiply"
+              run: "npm test multiply.test.js"
+            - name: "Run test for divide"
+              run: "npm test divide.test.js"
