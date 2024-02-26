@@ -9,6 +9,10 @@ jobs:
         steps:
             - name: "Run echo command"
               run: "echo working"
+            - name: "Checkout repostiory"
+              uses: actions/checkout@v2
+            - name: "Change to directory"
+              run: "cd funwithjest"
             - name: "Install all packages"
               run: "npm install"
             - name: "Run test for sum"
