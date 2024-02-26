@@ -9,6 +9,8 @@ jobs:
         steps:
             - name: "Run echo command"
               run: "echo working"
+            - name: "Install all packages"
+              run: "npm install"
             - name: "Run test for sum"
               run: "npm test sum.test.js"
             - name: "Run test for subtract"
